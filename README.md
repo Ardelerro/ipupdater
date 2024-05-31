@@ -61,7 +61,7 @@ a cronjob can be set up to run the script after every interval of time
     ``` sh
     */15 * * * * /path/to/ipupdater/ipupdater.sh
     ```
-    see [this site](https://crontab.guru/) to create an interval for your cronjob
+    see [this site](https://crontab.guru/) to generate an interval for your cronjob
     
 ## Logging
 The script logs all activities to `/etc/ipupdater/ip_update.log`. Check this log file for details about IP updates and any errors that occur.
