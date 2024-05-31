@@ -17,7 +17,7 @@ log_message() {
 # Get the current public IP
 get_public_ip() {
   ip=$(curl -s https://api.ipify.org)
-  if [ -z "$ip" ]; then
+  if [[ ! $ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     return 1
   fi
   echo "$ip"
