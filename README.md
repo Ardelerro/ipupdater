@@ -67,3 +67,9 @@ a cronjob can be set up to run the script after every interval of time
 The script logs all activities to `/etc/ipupdater/ip_update.log`. Check this log file for details about IP updates and any errors that occur.
 
 The log file should be regularly monitored to check for errors
+
+
+### TODO:
+- Implement better error handeling
+- make the system check various sources for ip address
+- update more than just cloudflare's dns
